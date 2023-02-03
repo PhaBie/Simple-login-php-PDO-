@@ -1,5 +1,5 @@
 # Simple-login-php-PDO-
-this is a simple login using html php css
+this is a simple login using html php css javascript
 
 # system we provide
 -Register
