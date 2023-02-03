@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+
+}
+nav {
+    width: 100%;
+    height: 5.5vw;
+    background: linear-gradient(125deg, #64ee42, #4cfced);
+}
+.nav-container {
+    max-width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logonav {
+    width: 4vw;
+    object-fit: contain;
+
+}
+.nav-profile{
+    display: flex;
+    align-items: center;
+}
+.nav-profile-name {
+    color: #fff;
+    font-size: 1.2vw;
+    margin-right: 10px;
+}
+.fa-cart-shopping {
+    color: #fff;
+    font-size: 2vw;
+}
+.nav-profile-cart{
+    position: relative;
+}
+.cartcount {
+    position: absolute;
+    top: -12px;
+    right:-13px;
+    width: 25px;
+    height: 25px;
+    background: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+}
+.sidebar {
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.product {
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.sidebar-search {
+    padding: 10px;
+    border: 2px solid transparent;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    background: #f2f2f2;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    font-size: 1.2vw;
+    border: solid 2px rgb(15, 9, 7)
+}
+.sidebar-search:focus {
+    border: 2px solid #f3000c6b;
+}
+.sidebar-item{
+    background: #ffffff;
+    margin-bottom: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #050E0E;
+    color: #000;
+    transition: 0.2s;
+    font-size: 1.2vw;
+}
+.sidebar-item:hover {
+    background: #000;
+    color: #fff;
+}
+.product-item{
+     cursor: pointer;
+     transition: 0.3s;
+}
+.product-item:hover{
+    transform: scale(1.03);
+}
+
+.product-img {
+    width: 100%;
+    height: 17vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.modal, .modal-bg {
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-page{
+    z-index: 99;
+    min-width: 30vw;
+    max-width: 90vw;
+    max-height: 30vw;
+    height: 30vw;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    overflow: scroll;
+}
+.modaldesc-content{
+    display: flex;
+}
+.modaldesc-detil{
+    margin-left: 20px;
+}
+.modaldesc-img{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.btn-control{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    transition: 0.2s;
+}
+.btn-buy{
+    background: linear-gradient(125deg, #f02618, #dd36f3);
+    color: rgb(15, 10, 10);
+    margin-left: 10px;
+}
+.cartlist{
+
+}
+.classlist-item{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+}
+.cartlist-left{
+
+    display: flex;
+}
+.cartlist-right{
+
+    display: flex;
+    align-items: center;
+}
+.cartlist-left img{
+    width: 5vw;
+    height: 5vw;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.btnc{
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.fa-regular fa-user{
+    background-color: #3ea5e0;
+}
+
+.bgfooter {
+    width: 100%;
+    height: 4vw;
+    background: linear-gradient(125deg, #64ee42, #4cfced);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setright{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.setcenter{
+    margin-top: 10px;
+}
